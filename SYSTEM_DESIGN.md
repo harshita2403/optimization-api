@@ -10,15 +10,15 @@ Design a backend system that can serve the **Optimization API** under **heavy co
 ## 1. High-Level System Diagram
 
 ```mermaid
-graph TD
-    A[+"Users / Clients"+] --> B[+"Load Balancer"+]
-    B --> C1[+"Application Server 1<br/>(Optimization API)"+]
-    B --> C2[+"Application Server 2<br/>(Optimization API)"+]
-    C1 --> D1[+"Cache<br/>(Redis)"+]
-    C2 --> D2[+"Cache<br/>(Redis)"+]
-    D1 --> E[+"Datastore<br/>(PostgreSQL)"+]
+flowchart TD
+    A["Users / Clients"] --> B["Load Balancer"]
+    B --> C1["Application Server 1 (Optimization API)"]
+    B --> C2["Application Server 2 (Optimization API)"]
+    C1 --> D1["Cache (Redis)"]
+    C2 --> D2["Cache (Redis)"]
+    D1 --> E["Datastore (PostgreSQL)"]
     D2 --> E
-    E --> F[+"Monitoring System<br/>(Prometheus + Grafana)"+]
+    E --> F["Monitoring System (Prometheus + Grafana)"]
 ```
 ## 2. Key Components
 
