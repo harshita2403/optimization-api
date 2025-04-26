@@ -1,0 +1,44 @@
+{
+  "containers": [
+    {
+      "id": "container1",
+      "weight": 1000.0,
+      "type": "standard",
+      "currentLocation": {
+        "x": 0.0,
+        "y": 0.0,
+        "name": "Port A"
+      },
+      "targetLocation": {
+        "x": 100.0,
+        "y": 100.0,
+        "name": "Port B"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "start": {
+        "x": 0.0,
+        "y": 0.0,
+        "name": "Port A"
+      },
+      "end": {
+        "x": 100.0,
+        "y": 100.0,
+        "name": "Port B"
+      },
+      "distance": 141.42,
+      "cost": 500.0,
+      "time": 2.5
+    }
+  ],
+  "parameters": {
+    "maxCost": 1000.0,
+    "maxTime": 5.0,
+    "maxDistance": 200.0,
+    "prioritizeCost": true,
+    "prioritizeTime": false,
+    "prioritizeDistance": false
+  }
+} 
